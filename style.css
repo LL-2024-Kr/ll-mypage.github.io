@@ -231,3 +231,18 @@ p { margin-top: 0; }
   right: auto !important;
   bottom: auto !important;
 }
+
+/* Academic activity cards */
+@media (min-width: 900px) {
+  .grid-4 {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+
+  .grid-4 > .card {
+    width: auto !important;
+    min-width: 0;
+    height: 100%;
+  }
+}
