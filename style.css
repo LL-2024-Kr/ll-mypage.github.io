@@ -224,3 +224,8 @@ p { margin-top: 0; }
   display: block;
   border-radius: 50%;
 }
+
+.float-tag.d {
+  top: 14%;
+  left: 2%;
+}
