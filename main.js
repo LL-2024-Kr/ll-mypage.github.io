@@ -17,3 +17,13 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+function toggleConferences() {
+  const panel = document.getElementById("conference-panel");
+
+  if (panel.style.display === "none" || panel.style.display === "") {
+    panel.style.display = "block";
+    panel.scrollIntoView({ behavior: "smooth", block: "start" });
+  } else {
+    panel.style.display = "none";
+  }
+}
