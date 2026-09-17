@@ -248,7 +248,7 @@ p { margin-top: 0; }
 
 .gallery-box {
   position: relative;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   background: #f7fafc;
   border-radius: 24px;
@@ -281,7 +281,7 @@ p { margin-top: 0; }
 
 .conference-item img {
   width: 60%;
-  height: 260px;
+  height: 300px;
   object-fit: cover;
   display: block;
 }
