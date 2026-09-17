@@ -17,13 +17,19 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-function toggleConferences() {
-  const panel = document.getElementById("conference-panel");
 
-  if (panel.style.display === "none" || panel.style.display === "") {
-    panel.style.display = "block";
-    panel.scrollIntoView({ behavior: "smooth", block: "start" });
-  } else {
-    panel.style.display = "none";
-  }
+function openConferenceGallery() {
+  document.getElementById("conference-gallery").classList.add("active");
+  document.body.style.overflow = "hidden";
 }
+
+function closeConferenceGallery() {
+  document.getElementById("conference-gallery").classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+document.addEventListener("keydown", function(event) {
+  if (event.key === "Escape") {
+    closeConferenceGallery();
+  }
+});
