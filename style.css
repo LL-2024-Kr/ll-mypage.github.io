@@ -226,6 +226,8 @@ p { margin-top: 0; }
 }
 
 .float-tag.d {
-  top: 14%;
-  left: 2%;
+  top: 18% !important;
+  left: -2% !important;
+  right: auto !important;
+  bottom: auto !important;
 }
